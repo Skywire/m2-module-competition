@@ -1,0 +1,9 @@
+<?php /** @var \Skywire\Competition\Block\Competition $block */ ?>
+<div>
+    <h1>Well hello there</h1>
+    <form method="post" action="<?= $block->getUrl('competition/index/submit') ?>">
+        <?= $block->getChildHtml('competition.questionnaire'); ?>
+
+        <input type="submit" value="Submit" />
+    </form>
+</div>

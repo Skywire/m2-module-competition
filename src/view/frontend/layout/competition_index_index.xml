@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Skywire\Competition\Block\Competition" template="Skywire_Competition::competition.phtml" cacheable="false">
+                <block class="Skywire\Questionnaire\Block\Questionnaire" name="competition.questionnaire">
+                    <arguments>
+                        <argument name="view_model" xsi:type="object">CompetitionQuestionnaireViewModel</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
